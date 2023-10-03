@@ -72,8 +72,9 @@ namespace com.portfolio2.web.Controllers
                 {
                     new Claim("UserName", user.Username),
                     new Claim(ClaimTypes.Email,user.Username),
+                    
                     new Claim(ClaimTypes.Role,"user"),
-                     new Claim(ClaimTypes.Role,"admin")
+                    new Claim(ClaimTypes.Role,"admin")
                  };
 
             //create a identity claims

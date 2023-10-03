@@ -12,9 +12,9 @@
     <div class="header-content container">
         <h1 class="header-title">
             <span class="up">HI!</span>
-            <span class="down">I am @profile.FullName </span>
+            <span class="down">I am @profile?.FullName </span>
         </h1>
-        <p class="header-subtitle">@profile.Title</p>
+        <p class="header-subtitle">@profile?.Title</p>
 
         <button class="btn btn-primary">Visit My Works</button>
     </div>
@@ -26,16 +26,16 @@
         <!-- about wrapper -->
         <div class="about">
             <div class="about-img-holder">
-                <img src="@profile.Photo" class="about-img"
+                <img src="@profile?.Photo" class="about-img"
                      alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
             </div>
             <div class="about-caption">
                 <p class="section-subtitle">Who Am I ?</p>
                 <h2 class="section-title mb-3">About Me</h2>
                 <p>
-                    @profile.AboutMe
+                    @profile?.AboutMe
                 </p>
-                <a href="@profile.Resume" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
+                <a href="@profile?.Resume" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
             </div>
         </div><!-- end of about wrapper -->
     </div><!-- end of container -->

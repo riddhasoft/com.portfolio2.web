@@ -24,8 +24,6 @@ namespace com.portfolio2.web.Controllers
             HomeViewModel viewModel = new HomeViewModel();
             viewModel.Profile = _context.UserProfile.FirstOrDefault();
             viewModel.Services = _context.Service.ToList();
-
-
             return View(viewModel);
         }
 
@@ -40,6 +38,10 @@ namespace com.portfolio2.web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
         public IActionResult AccessDenied()
+        {
+            return View();
+        }
+        public IActionResult SomethingIsWrong()
         {
             return View();
         }

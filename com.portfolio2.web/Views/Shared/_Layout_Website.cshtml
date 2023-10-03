@@ -16,6 +16,17 @@
     <link rel="stylesheet" href="/web/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="/web/css/meyawo.css">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-xxxxxx-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -46,6 +57,10 @@
                 <li class="item ml-md-3">
                     <a href="components.html" class="btn btn-primary">Components</a>
                 </li>
+                <li class="item ml-md-3">
+                    <a href="/users/login" class="btn btn-primary">login</a>
+                </li>
+
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -54,8 +69,6 @@
             </a>
         </div>
     </nav><!-- End of Page Navbar -->
-   
-   
     @RenderBody();
 
 
@@ -76,7 +89,7 @@
             </div>
         </footer>
     </div> <!-- end of page footer -->
-    <!-- core  -->
+    <!-- core path relative to wwwroot -->
     <script src="/web/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="/web/vendors/bootstrap/bootstrap.bundle.js"></script>
 

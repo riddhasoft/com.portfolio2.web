@@ -11,7 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace com.portfolio2.web.Controllers
 {
-    //[Authorize(Roles ="user,admin")]
+   [Authorize(Roles ="user,admin",Policy ="admin")]
+   
     public class UserProfilesController : Controller
     {
         private readonly comportfolio2webContext _context;
